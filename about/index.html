@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About 98Eight</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .logo-img {
+      max-height: 40px; /* Adjust the maximum height as needed */
+      width: auto;
+    }
+    .fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  </style>
+  <style>
+    .navbar-nav .nav-link:hover {
+      color: #98171c !important;
+  }
+  
+    .list-inline-item a {
+      color: #98171c;
+      transition: color 0.3s;
+  }
+  
+  .list-inline-item a:hover {
+      color: darken(#98171c, 10%);
+  }
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+<body>
+  <style>
+    .navbar-dark.bg-dark {
+        background-color: #232323 !important; /* Replace with your desired color */
+    }
+</style>  
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/index.html">
+    <img src="/public/98Eight.webp" alt="Your Logo" class="logo-img">
+  </a>
+
+  <!-- Button to toggle navigation -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/services/index.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about/index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact/index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About Us Section -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      
+      <h1 class="typewriter">Welcome to 98Eight, where creativity meets innovation.</h1>
+      <br>
+      <p>Located at the heart of Gauteng, South Africa, we are a leading media company dedicated to delivering high-quality services tailored to your needs. With years of experience in the industry, we pride ourselves on our commitment to excellence and our passion for storytelling.</p>
+      <p>At 98Eight, we specialize in a wide range of media services, including:</p>
+      <ul>
+        <li class="fade-in"><strong>Photography</strong>: Capturing moments that matter, from events to portraits, with precision and creativity.</li>
+        <li class="fade-in"><strong>Videography</strong>: Crafting compelling visual narratives that bring your ideas to life, whether it's promotional videos, documentaries, or event coverage.</li>
+        <li class="fade-in"><strong>Graphic Design</strong>: Designing captivating visuals that make your brand stand out, from logos and branding to marketing materials and more.</li>
+        <li class="fade-in"><strong>Internet Streaming</strong>: Leveraging the power of technology to help you reach a wider audience by broadcasting events, conferences, and more, live to your viewers anywhere.</li>
+      </ul>
+      <p class="fade-in">We believe in the power of collaboration and are dedicated to understanding and meeting your specific needs. Our team of skilled professionals is here to turn your vision into reality, ensuring that every project is executed with precision and creativity.</p>
+      <p class="fade-in">Thank you for choosing 98Eight. We look forward to working with you and helping you achieve your goals.</p>
+      <p class="text-center fade-in"><strong>Connect with us:</strong></p>
+      <ul class="list-inline text-center fade-in">
+        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100023081541841"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="mailto:sbongagamede10@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="tel:0658994400"><i class="fab fa-whatsapp-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com/98eight_pictures/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container text-center">
+    <span>© 2024 98Eight, All Rights Reserved. </span>
+  </div>
+</footer>
+<!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.fade-in').each(function(i) {
+      $(this).delay(500 * i).animate({'opacity': '1'}, 1000);
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.text-center').each(function(i) {
+      $(this).delay(500 * i).animate({'opacity': '1'}, 1000);
+    });
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $('.typewriter').each(function() {
+      var $el = $(this);
+      var text = $el.html();
+      $el.html('');
+      var index = 0;
+      var typewriter = setInterval(function() {
+        $el.append(text[index++]);
+        if(index === text.length) {
+          clearInterval(typewriter);
+        }
+      }, 50); // Adjust typing speed here (in milliseconds)
+    });
+  });
+</script>
+
+
+</body>
+</html>

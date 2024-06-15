@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <style>
+  .logo-img {
+    max-height: 40px; /* Adjust the maximum height as needed */
+    width: auto;
+  }
+
+  /* Ensure footer sticks to the bottom */
+  html, body {
+    height: 100%;
+  }
+  .wrapper {
+    min-height: calc(100vh - 100px); /* Adjusted to accommodate the footer */
+  }
+  .footer {
+    height: 100px; /* Adjust the height as needed */
+  }
+
+</style>
+<style>
+  .navbar-dark.bg-dark {
+      background-color: #222222 !important; /* Replace with your desired color */
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #98171c!important;
+    border-color: #dc3545;
+}
+</style>  
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/index.html">
+    <img src="/public/98Eight.webp" alt="Your Logo" class="logo-img">
+    
+  </a>
+
+  <!-- Button to toggle navigation -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/services/index.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about/index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact/index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contact Form -->
+<div class="container mt-5 wrapper">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      
+      <form action="https://formspree.io/f/xnqelgpe" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+        </div>
+        <div class="text-center" id="submit-btn-container">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<p class="text-center"><strong>Connect with us:</strong></p> <!-- Centered -->
+<ul class="list-inline text-center">
+  <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100023081541841"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+  <li class="list-inline-item"><a href="mailto:98Eightservices@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+  <li class="list-inline-item"><a href="tel:0658994400"><i class="fab fa-whatsapp-square fa-2x"></i></a></li>
+  <li class="list-inline-item"><a href="https://www.instagram.com/98eight_pictures/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+</ul>
+<style>
+  .navbar-nav .nav-link:hover {
+    color: #98171c !important;
+}
+
+  .list-inline-item a {
+    color: #98171c;
+    transition: color 0.3s;
+}
+
+.list-inline-item a:hover {
+    color: darken(#98171c, 10%);
+}
+
+</style>
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container text-center">
+    <span>© 2024 98Eight, All Rights Reserved. </span>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+</body>
+</html>

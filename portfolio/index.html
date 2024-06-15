@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Add your custom styles if needed -->
+    <style>
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('pexels-adrien-olichon-3137076.jpg'); /* Adjusted file name */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2; /* Adjust opacity as needed */
+            z-index: 500%; /* Ensure the overlay is behind the content */
+        }
+
+        .logo-img {
+            max-height: 50px; /* Adjust the size as needed */
+            width: auto;
+        }
+
+        /* Custom styles for the carousel */
+        .carousel-inner {
+            border: 5px solid white; /* White frame around the carousel */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            transition: transform 0.3s ease-in-out; /* Add a smooth hover effect */
+        }
+
+        .carousel-item img:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .loading-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .navbar-custom {
+    background-color: #191B5B;
+  }
+    </style>
+</head>
+<body>
+    <style>
+        .navbar-dark.bg-dark {
+            background-color: #222222 !important; /* Replace with your desired color */
+        }
+    </style>  
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+    <a class="navbar-brand" href="/index.html">
+        <img src="/public/98Eight.webp" alt="Your Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/index.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Main Content Section -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Message Section -->
+        <div class="col-12 text-center my-5">
+            <h3>Welcome to Our Portfolio</h3>
+            <p>Take a look at our featured works below:</p>
+        </div>
+  
+        <!-- Wedding Photography Section -->
+        <div class="col-md-6">
+            <section id="wedding" class="py-5">
+                <h2 class="text-center mb-5">Wedding Photography</h2>
+                <div id="weddingCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Add Wedding Photography images here -->
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <!-- Carousel Item 1 -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="contents/wedding/WED-2.webp" alt="Wedding Photo 1">
+                        </div>
+                        <!-- Carousel Item 2 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/wedding/WED-3.webp" alt="Wedding Photo 2">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/wedding/WED-8.webp" alt="Wedding Photo 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/wedding/WED.webp" alt="Wedding Photo 4">
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control-prev" href="#weddingCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#weddingCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- Corporate Events Section -->
+        <div class="col-md-6">
+            <section id="corporate" class="py-5">
+                <h2 class="text-center mb-5">Corporate Events</h2>
+                <div id="corporateCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Add Corporate Events images here -->
+                        <!-- Carousel Item 1 -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="contents/corporate/CAD-40.webp" alt="Corporate Event 1">
+                        </div>
+                        <!-- Carousel Item 2 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/corporate/CAD-37.webp" alt="Corporate Event 2">
+                        </div>
+                        <!-- Carousel Item 3 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/corporate/CAD-1.webp" alt="Corporate Event 3">
+                        </div>
+                        <!-- Carousel Item 4 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/corporate/W&RSETA-159.webp" alt="Corporate Event 4">
+                        </div>
+                        <!-- Carousel Item 5 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/corporate/FB_IMG_1708596811122.webp" alt="Corporate Event 5">
+                        </div>
+                        <!-- Carousel Item 6 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/corporate/W&RSETA-82.webp" alt="Corporate Event 6">
+                        </div>
+                        
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#corporateCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#corporateCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main Content Section -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Led Screen Graphics Section -->
+        <div class="col-md-6">
+            <section id="led-screen" class="py-5">
+                <h2 class="text-center mb-5">Led Screen Graphics</h2>
+                <div id="ledScreenCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Add Led Screen Graphics images here -->
+                        <!-- Carousel Item 1 -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="contents/ledscreens/teen uni 802-5.webp" alt="Led Screen Graphic 1">
+                        </div>
+                        <!-- Carousel Item 2 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/ledscreens/20240311_190812.webp" alt="Led Screen Graphic 2">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/ledscreens/FB_IMG_1701861196263.webp" alt="Led Screen Graphic 2">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/ledscreens/20240311_190757.webp" alt="Led Screen Graphic 2">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/ledscreens/JU-33.webp" alt="Led Screen Graphic 2">
+                        </div>
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#ledScreenCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#ledScreenCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- pageants Section -->
+        <div class="col-md-6">
+            <section id="pageants" class="py-5">
+                <h2 class="text-center mb-5">Beauty Pageant</h2>
+                <div id="pageantsCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Add pageants images here -->
+                        <!-- Carousel Item 1 -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="contents/pageant/FB_IMG_1708597321842.webp" alt="pageant 1">
+                        </div>
+                        <!-- Carousel Item 2 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="contents/pageant/teen uni 802-49.webp" alt="pageant 2">
+                        </div>
+                        
+                        
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#pageantsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#pageantsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Event Photography Section -->
+<section id="event-photography" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Music Events</h2>
+        <div id="eventPhotographyCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Add Event Photography images here -->
+                <!-- Carousel Item 1 -->
+<div class="carousel-item active">
+    <img class="d-block w-100" src="contents/events/98PICTURES-179.webp" alt="Event Photo 1">
+</div>
+<!-- Carousel Item 2 -->
+<div class="carousel-item">
+    <img class="d-block w-100" src="contents/events/98-22.webp" alt="Event Photo 2">
+</div>
+
+<!-- Carousel Item 3 -->
+<div class="carousel-item">
+    <img class="d-block w-100" src="contents/events/FB_IMG_1708597232759.webp" alt="Event Photo 3">
+</div>
+
+<!-- Carousel Item 4 -->
+<div class="carousel-item">
+    <img class="d-block w-100" src="contents/events/FB_IMG_1708597232759.webp" alt="Event Photo 4">
+</div>
+
+            
+
+            
+                <!-- Add more carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#eventPhotographyCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#eventPhotographyCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<div class="home-footer">
+    <footer class="footerContainer home-footer1">
+      <div class="home-container6">
+        <span class="logo">
+          <img src="rotating.gif" alt="98Eight Logo" style="height: 90px;">
+        </span>
+        <nav class="home-nav1">
+          <span class="home-nav11 bodySmall"><a href="#">Home</a></span>
+  <span class="home-nav22 bodySmall"><a href="services/index.html">Services</a></span>
+  <span class="home-nav32 bodySmall"><a href="portfolio/index.html">Portfolio</a></span>
+  <span class="home-nav42 bodySmall"><a href="about/index.html">About</a></span>
+  <span class="home-nav52 bodySmall"><a href="contact/index.html">Contact</a></span>
+
+        </nav>
+      </div>
+      <div class="home-separator"></div>
+      <div class="home-container7">
+        <span class="bodySmall home-text49">
+          © 2024 98Eight, All Rights Reserved.
+        </span>
+        <div class="home-icon-group1">
+          
+          <a href="https://www.instagram.com/98eight_pictures/" target="_blank" rel="noreferrer noopener" class="home-link">
+            <svg viewBox="0 0 950.8571428571428 1024" class="home-icon10 socialIcons">
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+            </svg>
+          <a href="https://www.facebook.com/profile.php?id=100023081541841" target="_blank" rel="noreferrer noopener" class="home-link">
+              <svg viewBox="0 0 602.2582857142856 1024" class="home-icon14 socialIcons">
+                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+              </svg>
+          </a>
+          
+          </a>
+      </div>
+      
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Add Bootstrap JS and Popper.js before the closing body tag -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
