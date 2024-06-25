@@ -4024,6 +4024,7 @@ tbody.collapse.show {
         flex-basis: auto
     }
     .navbar-expand-lg .navbar-toggler {
+      background-color: #0069d9;
         display: none
     }
     .navbar-expand-lg .dropup .dropdown-menu {

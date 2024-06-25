@@ -3863,6 +3863,7 @@ tbody.collapse.show {
     font-size: 1.25rem;
     line-height: 1;
     background: 0 0;
+    color: #fff;
     border: 1px solid transparent;
     border-radius: .25rem
 }
@@ -4024,6 +4025,7 @@ tbody.collapse.show {
         flex-basis: auto
     }
     .navbar-expand-lg .navbar-toggler {
+        background-color: #0069d9;
         display: none
     }
     .navbar-expand-lg .dropup .dropdown-menu {

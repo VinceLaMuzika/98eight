@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="/services/css/slicknav.min.css">
     <link rel="stylesheet" href="/services/css/normalize.css">
     <link rel="stylesheet" href="/services/css/nice-select.css">
-    <link rel="stylesheet" href="css/style.css" />
+   
     <!-- Bootstrap CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Nice Select CSS -->
     <link rel="stylesheet" href="css/nice-select.css">
@@ -38,21 +42,11 @@
 <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <style>
-      .dropdown-content {
-        display: none;
-        /* Additional styling for the dropdown content */
-      }
-      .dropdown.open .dropdown-content {
-        display: block;
-      }
-      .dropdown.open .icon {
-        transform: rotate(90deg);
-      }
-    </style>  
-    
-    
+
     <!-- Medipro CSS -->
+    <link rel="stylesheet" href="/home-navbar/css/bootstrap/">
+    <link rel="stylesheet" href="/home-navbar/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home-navbar/css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -67,203 +61,144 @@
     
         
         <!-- End Preloader -->
-        <style>
-          .logo-header {
-            height: 10% !important;
-          }
-          /* Style for mobile navigation */
-          .mobile-nav {
-            display: none; /* Hide mobile navigation by default */
-          }
-          .mobile-nav.active {
-            display: block; /* Show mobile navigation when active */
-          }
-          .mobile-nav ul {
-            list-style: none;
-            padding: 0;
-          }
-          .mobile-nav ul li {
-            margin-bottom: 10px;
-          }
-        </style>
+       
     <!-- Get Pro Button -->
-    <style>
-      .logo-header {
-        height:10% !important;
-      }
-    </style>
-  
-    <!-- Header Area -->
-    <header class="header">
-      <!-- Header Inner -->
-      <div class="header-inner">
-        <div class="container">
-          <div class="inner">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-12">
-                <!-- Start Logo -->
-                <div class="logo-header">
-                  <a href="index.html"><img src="img/logo.png" style="max-width: 20%" alt="#"></a>
-                </div>
-                <!-- End Logo -->
-                <!-- Mobile Nav (Burger Menu) -->
-                <div class="mobile-nav">
-                  <button class="burger-menu" onclick="toggleMobileNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                  <div class="mobile-menu">
-                    <ul class="nav menu">
-                      <li><a href="#">Home</a></li>
-                      <li>
-                        <a href="#">Portfolio <i class="fas fa-angle-down"></i></a>
-                        <ul class="dropdown">
-                          <li><a href="portfolio/index.html">Wedding</a></li>
-                          <li><a href="portfolio/index.html">Corporate</a></li>
-                          <li><a href="portfolio/index.html">Led Screen Graphics</a></li>
-                          <li><a href="portfolio/index.html">Beauty Pageants</a></li>
-                          <li><a href="portfolio/index.html">Music Events</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="services/index.html">Services</a></li>
-                      <li><a href="about/index.html">About</a></li>
-                      <li><a href="contact/index.html">Contact</a></li>
-                    </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+           
+
+              <!--  navbar  -->
+              <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+              <link rel="stylesheet" href="css/style2.css">
+              <style>
+                .navbar {
+    background-color: #000000;
+    color: #ffffff;
+    /* [disabled]left: 5%; */
+    /* [disabled]right: auto; */
+                }
+                .btn-dark-red {
+                  background-color: #8B0000; /* Dark Red */
+                  color: white;
+                  border: none;
+                   white-space: nowrap; /* Prevent text from wrapping */
+                }
+            
+                .btn-dark-red:hover {
+                  background-color: #A52A2A; /* Lighter Dark Red for hover effect */
+                  color: white;
+                }
+            
+                /* Add underline effect */
+                .nav-link {
+                  position: relative;
+                }
+            
+                .nav-link::after {
+                  content: '';
+                  position: absolute;
+                  width: 0;
+                  height: 2px;
+                  display: block;
+                  margin-top: 5px;
+                  right: 0;
+                  background: #8B0000; /* Dark Red */
+                  transition: width 0.3s ease, right 0.3s ease;
+                }
+            
+                .nav-link:hover::after {
+                  width: 100%;
+                  right: 0;
+                }
+              </style>
+           
+           <div class="container" style="position: absolute; right: 40px; z-index: 999;">
+            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+              <div class="container">
+                <a class="navbar-brand" href="index.html">
+                  <img src="logo.png" alt="98eight" style="height: 40px; width: auto; left: auto;">
+                </a>
+                <div class="social-media order-lg-last">
+                  <div class="col-lg-2 col-12">
+                    <div class="get-quote">
+                      <a href="#" class="btn btn-dark-red" data-toggle="modal" data-target="#bookingModal">Book Appointment</a>
+                    </div>
                   </div>
                 </div>
-                <!-- End Mobile Nav -->
-              </div>
-              <div class="col-lg-7 col-md-9 col-12">
-                <!-- Main Menu -->
-                <div class="main-menu">
-                  <nav class="navigation">
-                    <ul class="nav menu">
-                      <li><a href="#">Home</a></li>
-                      <li>
-                        <a href="#">Portfolio <i class="fas fa-angle-down"></i></a>
-                        <ul class="dropdown">
-                          <li><a href="portfolio/index.html">Wedding</a></li>
-                          <li><a href="portfolio/index.html">Corporate</a></li>
-                          <li><a href="portfolio/index.html">Led Screen Graphics</a></li>
-                          <li><a href="portfolio/index.html">Beauty Pageants</a></li>
-                          <li><a href="portfolio/index.html">Music Events</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="services/index.html">Services</a></li>
-                      <li><a href="about/index.html">About</a></li>
-                      <li><a href="contact/index.html">Contact</a></li>
-                    </ul>
-                  </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                  <ul class="navbar-nav ml-auto mr-md-3">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="/portfolio/index.html">Wedding</a>
+                        <a class="dropdown-item" href="/portfolio/index.html">Corporate/a>
+                        <a class="dropdown-item" href="/portfolio/index.html">Led Screen Graphics</a>
+                        <a class="dropdown-item" href="/portfolio/index.html">Beauty Pageants</a>
+                        <a class="dropdown-item" href="/portfolio/index.html">Music Events</a>
+                      </div>
+                    </li>
+                    <li class="nav-item"><a href="/services/index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="/about/index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact/index.html" class="nav-link">Contact</a></li>
+                  </ul>
                 </div>
-                
-                <!--/ End Main Menu -->
               </div>
-              <div class="col-lg-2 col-12">
-                <div class="get-quote">
-                    <a href="#" class="btn" data-toggle="modal" data-target="#bookingModal">Book Appointment</a>
+            </nav>
+          </div>
+          
+          <!-- Booking Modal -->
+          <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bookingModalLabel">Book Appointment</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-            </div>
-            
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            <!--/ End Header Inner -->
-            </header>
-            </head>
-            
-            <body>
-                <div id="bookingModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="bookingModalLabel">Book Your Photoshoot</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id="booking" class="section">
-                                    <div class="section-center">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="booking-form">
-                                                    <form action="https://formspree.io/f/mnqeewpq" method="POST">
-                                                        <div class="form-group">
-                                                            <input class="form-control" type="text" name="name" required>
-                                                            <span class="form-label">Your Name</span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input class="form-control" type="email" name="email" required>
-                                                            <span class="form-label">Your Email</span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input class="form-control" type="tel" name="phone" required>
-                                                            <span class="form-label">Phone Number</span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <select class="form-control" name="photography_type" required>
-                                                                <option value="" selected hidden>Select Photography Type</option>
-                                                                <option>Wedding Photography</option>
-                                                                <option>Portrait Photography</option>
-                                                                <option>Event Photography</option>
-                                                                <option>Product Photography</option>
-                                                            </select>
-                                                            <span class="select-arrow"></span>
-                                                            <span class="form-label">Photography Type</span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" name="additional_info" rows="4" required></textarea>
-                                                            <span class="form-label">Additional Information</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <input class="form-control" type="date" name="preferred_date" required>
-                                                                    <span class="form-label">Preferred Date</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <input class="form-control" type="time" name="preferred_time" required>
-                                                                    <span class="form-label">Preferred Time</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-btn">
-                                                            <button class="submit-btn" type="submit">Book Now</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
                     </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                      <label for="date">Date</label>
+                      <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group">
+                      <label for="time">Time</label>
+                      <input type="time" class="form-control" id="time">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark-red">Submit</button>
+                  </form>
                 </div>
-           
-            
-
-      
-
               </div>
             </div>
+          </div>
+          
             
-            
-               
-
-  
-              </div>
-            </div>
-          </header>
-        </div>
-       
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              <script src="js/main.js"></script>
+          <!--  navbar  -->
         <div class="slideshow-container">
           <div class="mySlides fade">
             <img src="content/98Eight-2350.webp" style="max-width: 120%; height: auto;">
@@ -462,6 +397,51 @@
 .button-82-pushable:focus:not(:focus-visible) {
   outline: none;
 }
+.form-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #98171c; /* Updated background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submit-btn:hover {
+    background-color: #7c1317; /* Darker shade of the color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.submit-btn:active {
+    background-color: #650f12; /* Even darker shade of the color when active */
+    transform: scale(1); /* Reset size when active */
+}
+
+.submit-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(152, 23, 28, 0.25); /* Custom focus outline */
+}
+.form-control2 {
+    height: 50px; /* Increase the height to 50px, adjust as needed */
+    font-size: 16px; /* Optional: Increase the font size */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    border: 1px solid #ccc; /* Optional: Border styling */
+    transition: border-color 0.3s ease; /* Optional: Smooth transition for border color */
+}
+
+.form-control:focus {
+    border-color: #98171c; /* Optional: Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
 </style>
 
 
@@ -1041,6 +1021,16 @@
         });
       });
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
     <script src="js/main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

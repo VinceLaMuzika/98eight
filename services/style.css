@@ -321,7 +321,7 @@ color: darkred;
 	margin-right:8px;
 }
 .header .header-inner {
-	background:#232323;
+	background:#000;
 	z-index:999;
 	width:100%;
 }
