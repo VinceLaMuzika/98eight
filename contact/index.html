@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+  
+  <style>
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .logo-img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .navbar-dark.bg-dark {
+      background-color: #000!important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #98171c !important;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #98171c !important;
+      border-color: #dc3545;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    .footer {
+      background-color: #232323;
+      padding: 7rem 0;
+      text-align: center;
+      color: #969494;
+    }
+
+    .footer a {
+      color: #98171c;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: darken(#98171c, 10%);
+    }
+
+    .footer .social ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer .social ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .footer .social ul li a {
+      color: #9b9898;
+      font-size: 1.5rem;
+    }
+
+    .footer .nav-links {
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer .nav-links li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .footer .nav-links li a {
+      padding: 10px;
+      color: #969494;
+    }
+
+    .footer .nav-links li a:hover {
+      color: #98171c;
+    }
+
+    .footer .copyright {
+      color: #999999;
+      margin-top: 1rem;
+    }
+
+    .contact-form {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+
+    .contact-form .form-control {
+      border-radius: 5px;
+      box-shadow: none;
+      border-color: #ced4da;
+    }
+
+    .contact-form .btn-primary {
+      background-color: #98171c !important;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form .btn-primary:hover {
+      background-color: #dc3545 !important;
+    }
+
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/index.html">
+      <img src="/public/98Eight.webp" alt="Your Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button">
+            Portfolio <i class="icofont-rounded-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <a class="dropdown-item" href="/portfolio/index.html">Wedding</a>
+            <a class="dropdown-item" href="/portfolio/index.html">Corporate</a>
+            <a class="dropdown-item" href="/portfolio/index.html">Led Screen Graphics</a>
+            <a class="dropdown-item" href="/portfolio/index.html">Beauty Pageants</a>
+            <a class="dropdown-item" href="/portfolio/index.html">Music Events</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services/index.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/index.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/contact/index.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="container mt-5 wrapper">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <h2 class="text-center">Contact Us</h2>
+          <form action="https://formspree.io/f/xnqelgpe" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <div class="contact-details mt-4">
+            <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 076 102 6343</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Johannesburg, South Africa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-center">
+          <div class="footer-site-logo mb-4">
+            <h2>98Eight</h2>
+          </div>
+          <ul class="list-unstyled nav-links mb-5">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/services/index.html">Services</a></li>
+            <li><a href="/portfolio/index.html">Portfolio</a></li>
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+          </ul>
+          <div class="social mb-4">
+            <h3>Stay in touch</h3>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100023081541841"><i class="fab fa-facebook-square"></i></a></li>
+              <li class="list-inline-item"><a href="mailto:98Eightservices@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+              <li class="list-inline-item"><a href="tel:0658994400"><i class="fab fa-whatsapp-square"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/98eight_pictures/"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p class="mb-0"><small>&copy; 98Eight. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
