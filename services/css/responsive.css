@@ -385,7 +385,7 @@ Version:	1.1
 	position: absolute;
 	position: relative;
 	padding-bottom: 20px;
-	background: #232323;
+	background: #010101;
 }
 .slicknav_menu{
 	display:block;
@@ -462,7 +462,7 @@ Version:	1.1
 	font-weight:400;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #98171c;
+	background-color: gray;
 	box-shadow: none;
 	text-shadow: none;
 }
