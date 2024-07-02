@@ -111,7 +111,7 @@ color: darkred;
 	color: #98171c;
 	font-size: 15px;
 }
-.pro-features .button{}
+
 .pro-features .button .btn {
 	width: 100%;
 	text-align: center;
@@ -144,9 +144,8 @@ color: darkred;
 	cursor: pointer;
 	box-shadow: -4px 0px 5px #00000036;
 }
-.get-pro:hover{
-	
-}
+
+
 #scrollUp {
 	bottom: 15px;
 	right: 15px;
@@ -824,9 +823,7 @@ color: darkred;
 .schedule .single-schedule a i{
 	margin-left:10px;
 }
-.schedule .single-schedule .time-sidual{
-	
-}
+
 .schedule .single-schedule .time-sidual{
 	overflow:hidden;
 	margin-top:17px;
@@ -932,9 +929,7 @@ color: darkred;
 	background-size:cover;
 	background-repeat:no-repeat;
 }
-.fun-facts .single-fun {
-	
-}
+
 .fun-facts .single-fun i {
 	position: absolute;
 	left: 0;
@@ -1007,7 +1002,7 @@ color: darkred;
 .why-choose .choose-left p{
 	margin-bottom:35px;
 }
-.why-choose .choose-left .list{}
+
 .why-choose .choose-left .list li {
 	color: #868686;
 	margin-bottom: 12px;
@@ -1284,7 +1279,7 @@ color: darkred;
 	display:inline-block;
 	margin-right:5px;
 }
-.pf-details .body-text{}
+
 .pf-details .body-text h3 {
 	font-size: 30px;
 	font-weight: 600;
@@ -1491,7 +1486,7 @@ color: darkred;
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
+	
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
@@ -1575,7 +1570,7 @@ color: darkred;
 	color: #868686;
 	margin-top: 3px;
 }
-.departments .department-tab .tab-pane .department-left{}
+
 .departments .department-tab .tab-pane .department-left h3{
 	color:#D3D3D3;
 	font-weight:600;
@@ -1601,7 +1596,7 @@ color: darkred;
 .departments .department-tab .tab-pane .department-left p {
 	margin-bottom: 20px;
 }
-.departments .department-tab .tab-pane .department-left .list{}
+
 .departments .department-tab .tab-pane .department-left .list li{
 	position:relative;
 	padding-left: 30px;
@@ -1745,9 +1740,7 @@ color: darkred;
 	padding:100px 0px;
 	position:relative;
 }
-.clients .single-clients{
-	
-}
+
 .clients .single-clients img {
 	width: 100%;
 	cursor: pointer;
@@ -1949,9 +1942,7 @@ color: darkred;
 	color: #D3D3D3;
 	margin-top: 30px;
 }
-.doctor-details-item .doctor-details-work .time-sidual{
-	
-}
+
 .doctor-details-item .doctor-details-work .time-sidual{
 	overflow:hidden;
 }
@@ -1974,9 +1965,7 @@ color: darkred;
 	padding-left: 60px;
 	padding-top: 70px;
 }
-.doctor-details-item .doctor-details-biography {
- 
-}
+
 .doctor-details-item .doctor-details-biography h3 {
   font-weight: 600;
   font-size: 24px;
@@ -2308,7 +2297,7 @@ color: darkred;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	border-radius: 8px;
 }
-.news-single .news-head{}
+
 .news-single .news-head img{
 	width:100%;
 	height:100%;
@@ -2634,8 +2623,7 @@ color: darkred;
 	margin-bottom: 20px;
 	text-transform: capitalize;
 }
-.news-single .form {
-}
+
 .news-single .form-group {
 	position: relative;
 	display: block;
@@ -2755,18 +2743,18 @@ color: darkred;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .title{}
+
 .appointment.single-page .title h3 {
 	font-size: 25px;
 	display: block;
 	margin-bottom: 10px;
 	font-weight:600;
 }
-.appointment.single-page .title p{}
+
 .appointment .form{
 	margin-top:30px;
 }
-.appointment .form .form-group{}
+
 .appointment .form input {
 	width: 100%;
 	height: 50px;
@@ -2820,7 +2808,7 @@ color: darkred;
 	color:#fff;
 	background: #98171c;
 }
-.appointment .appointment-image{}
+
 .appointment.single-page .button .btn{
 	width:100%;
 }
@@ -3569,13 +3557,13 @@ color: darkred;
 .newsletter{
 	background:#EDF2FF;
 }
-.newsletter .subscribe-text{}
+
 .newsletter .subscribe-text h6{
 	font-size:22px;
 	margin-bottom:10px;
 	color:#585858;
 }
-.newsletter .subscribe-text p{}
+
 .newsletter .subscribe-form{
 	position:relative;
 }

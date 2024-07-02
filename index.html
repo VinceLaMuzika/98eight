@@ -1,1039 +1,930 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>98Eight</title>
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <meta property="og:title" content="Composed Trivial Swallow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="/services/css/responsive.css">
-    <link rel="stylesheet" href="/services/css/slicknav.min.css">
-    <link rel="stylesheet" href="/services/css/normalize.css">
-    <link rel="stylesheet" href="/services/css/nice-select.css">
-   
-    <!-- Bootstrap CSS -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css">
-    <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css">
-    <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
-    <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Bootstrap CSS -->
-<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Y29Z9o6gIvRqsfA1sOvwF5yhA7FeLZfD5tkx2c4FGwKwEosk65u6NExU8pLxg/MY8DVRd5FzjxUG4CeZ9C8lRQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Medipro CSS -->
-    <link rel="stylesheet" href="/home-navbar/css/bootstrap/">
-    <link rel="stylesheet" href="/home-navbar/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/home-navbar/css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
+        <!-- title of site -->
+        <title>98eight</title>
 
-    
-      <link href="./index.css" rel="stylesheet" />
-<!--Navbar-->
-
-
-    <!-- Preloader -->
-    
-        
-        <!-- End Preloader -->
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
        
-    <!-- Get Pro Button -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-           
+		<!--flat icon css-->
+	
+		<link rel="stylesheet" href="style.css">
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
 
-              <!--  navbar  -->
-              <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-              <link rel="stylesheet" href="css/style2.css">
-              <style>
-                .navbar {
-    background-color: #000000;
-    color: #ffffff;
-    /* [disabled]left: 5%; */
-    /* [disabled]right: auto; */
-                }
-                .btn-dark-red {
-                  background-color: #8B0000; /* Dark Red */
-                  color: white;
-                  border: none;
-                   white-space: nowrap; /* Prevent text from wrapping */
-                }
-            
-                .btn-dark-red:hover {
-                  background-color: #A52A2A; /* Lighter Dark Red for hover effect */
-                  color: white;
-                }
-            
-                /* Add underline effect */
-                .nav-link {
-                  position: relative;
-                }
-            
-                .nav-link::after {
-                  content: '';
-                  position: absolute;
-                  width: 0;
-                  height: 2px;
-                  display: block;
-                  margin-top: 5px;
-                  right: 0;
-                  background: #8B0000; /* Dark Red */
-                  transition: width 0.3s ease, right 0.3s ease;
-                }
-            
-                .nav-link:hover::after {
-                  width: 100%;
-                  right: 0;
-                }
-              </style>
-           
-           <div class="container" style="position: absolute; right: 40px; z-index: 999;">
-            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-              <div class="container">
-                <a class="navbar-brand" href="index.html">
-                  <img src="logo.png" alt="98eight" style="height: 40px; width: auto; left: auto;">
-                </a>
-                <div class="social-media order-lg-last">
-                  <div class="col-lg-2 col-12">
-                    <div class="get-quote">
-                      <a href="#" class="btn btn-dark-red" data-toggle="modal" data-target="#bookingModal">Book Appointment</a>
-                    </div>
-                  </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="fa fa-bars"></span> Menu
-                </button>
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                  <ul class="navbar-nav ml-auto mr-md-3">
-                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="/portfolio/index.html">Wedding</a>
-                        <a class="dropdown-item" href="/portfolio/index.html">Corporate/a>
-                        <a class="dropdown-item" href="/portfolio/index.html">Led Screen Graphics</a>
-                        <a class="dropdown-item" href="/portfolio/index.html">Beauty Pageants</a>
-                        <a class="dropdown-item" href="/portfolio/index.html">Music Events</a>
-                      </div>
-                    </li>
-                    <li class="nav-item"><a href="/services/index.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="/about/index.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/contact/index.html" class="nav-link">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-          
-          <!-- Booking Modal -->
-          <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="bookingModalLabel">Book Appointment</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                      <label for="date">Date</label>
-                      <input type="date" class="form-control" id="date">
-                    </div>
-                    <div class="form-group">
-                      <label for="time">Time</label>
-                      <input type="time" class="form-control" id="time">
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-dark-red">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-            
-              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-              <script src="js/main.js"></script>
-          <!--  navbar  -->
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="content/98Eight-2350.webp" style="max-width: 120%; height: auto;">
-          </div>
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
         
-          <div class="mySlides fade">
-            <img src="content/98-22.webp" style="max-width: 100%; height: auto;">
-          </div>
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
         
-          <div class="mySlides fade">
-            <img src="content/98PICTURES-179.webp" style="max-width: 100%; height: auto;">
-          </div>
-        
-          <div class="mySlides fade">
-            <img src="content/pj.webp" style="max-width: 100%; height: auto;">
-          </div>
-        </div>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-        
-          
-          <script>
-            let slideIndex = 0;
-            showSlides();
-          
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-          
-              for (i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active");
-              }
-          
-              slideIndex++;
-          
-              if (slideIndex > slides.length) {
-                slideIndex = 1;
-              }
-          
-              slides[slideIndex - 1].classList.add("active");
-          
-              setTimeout(showSlides, 3000); // Change image every 3 seconds
-            }
-          </script>
-          
-          <div class="content-overlay">
-            <h1 id="heading" data-thq-animate-on-reveal="true" class="home-hero-heading heading1 typewriter-trigger">
-                <span id="typewriter-text"></span>
-            </h1>
-        
-            <br>
-            <div>
-        
-              <style>
-               #typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<style>
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0%;
 }
 
-#typewriter-text:after {
-  content: "!";
-  animation: blink 1s infinite;
+.mySlides img {
+  width: 100%;
+  height: auto;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
+@media (max-width: 768px) {
+  .slideshow-container {
+    max-width: 100%; /* Adjust as needed */
+    margin-top: 0px; /* Height of the navbar */
   }
-  50% {
+}
+
+/* Fade-in Animation */
+.fade {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-              </style>          
-             
-              <!-- HTML !-->
-              <a href="/portfolio/index.html">
-                <button class="button-82-pushable" role="button">
-                  <span class="button-82-shadow"></span>
-                  <span class="button-82-edge"></span>
-                  <span class="button-82-front text">
-                    See our portfolio
-                  </span>
-                </button>
-              </a>
-              
+	.home-features {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
+.home-features1 {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  justify-content: flex-start;
+}
+.home-container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header {
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+.header-text {
+    position: absolute;
+    top: 300px; /* Adjust based on your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Ensure it is in front of the slideshow */
+    text-align: center; /* Center the text */
+}
+
+.header-text h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em; /* Adjust font size */
+}
+
+.header-text .btn {
+    color: white;
+    
+}
+
+.slideshow-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 0; /* Ensure there's no margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .header-text {
+        top: 250px;
+    }
+
+    .header-text h2 {
+        font-size: 1.8em;
+    }
+
+    .header-text .btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-text {
+        top: 200px;
+    }
+
+    .header-text h2 {
+        font-size: 1.6em;
+    }
+
+    .header-text .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        top: 150px;
+    }
+
+    .header-text h2 {
+        font-size: 1.4em;
+    }
+
+    .header-text .btn {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text {
+        top: 100px;
+    }
+
+    .header-text h2 {
+        font-size: 1.2em;
+    }
+
+    .header-text .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+
+</style>
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<!-- top-area Start -->
+<header class="top-area">
+    <div class="header-area">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="favicon56.png" alt="Logo" style="width: 200px; height: auto;">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="smooth-menu active"></li>
+                        <li class="smooth-menu"><a href="#">Home</a></li>
+                        <li class="smooth-menu"><a href="portfolio/index.html">Portfolio</a></li>
+                        <li class="smooth-menu"><a href="services/index.html">Services</a></li>
+                        <li class="smooth-menu"><a href="about/index.html">About</a></li>
+                        <li class="smooth-menu"><a href="contact/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!--/.container-->
+        </nav>
+        <!-- End Navigation -->
+
+     
+    </div>
+	<!-- HTML !-->
+
+<style>
+  .header-text h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+</style>
+<div class="header-text">
+	<h2>Let's Make Memories!</h2>
+	<button class="button-42" id="portfolioButton" role="button">See our Portfolio</button>
+  </div>
+  
+  <script>
+	document.getElementById('portfolioButton').addEventListener('click', function() {
+	  window.location.href = 'portfolio/index.html';
+	});
+  </script>
+  
+
+  
+  
+  <!-- HTML !-->
+
 <style>
 /* CSS */
-.button-82-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
+.button-42 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff3131, #bf0000);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
   cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
 }
 
-.button-82-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+.button-42:hover {
+  box-shadow: rgba(253, 0, 0, 0.5) 0 3px 8px;
+}
+</style>
+<script>
+	// Select the specific element with class "header-text"
+const element = document.querySelector('.header-text h2');
+
+// Get the text content
+const text = element.textContent;
+
+// Clear the text content
+element.textContent = '';
+
+// Function to simulate typewriter effect
+function typeWriter(text, i) {
+    if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(() => {
+            typeWriter(text, i);
+        }, 100); // Adjust the typing speed (milliseconds)
+    }
 }
 
-.button-82-edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-    to left,
-    hsl(340deg 100% 8%) 0%,
-    hsl(340deg 100% 14%) 8%,
-    hsl(340deg 100% 14%) 92%,
-    hsl(340deg 100% 8%) 100%
+// Call the typewriter function
+typeWriter(text, 0);
+
+</script>
+	<style>
+		.header-text h2 {
+  font-size: 3vw; /* Responsive font size based on viewport width */
+  margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .header-text h2 {
+    font-size: 5vw; /* Increase font size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h2 {
+    font-size: 7vw; /* Further increase font size for small screens */
+  }
+}
+
+	</style>
+	
+</header>
+  
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="content/98Eight-2350.webp" style="max-width: 120%; height: auto;">
+    </div>
+    <div class="mySlides fade">
+        <img src="content/98-22.webp" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="mySlides fade">
+        <img src="content/98PICTURES-179.webp" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="mySlides fade">
+        <img src="content/pj.webp" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].classList.add("active");
+
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+<script>
+	// Select the specific element with class "typewriter"
+const element = document.querySelector('.home-features .typewriter');
+
+// Get the text content
+const text = element.textContent;
+
+// Clear the text content
+element.textContent = '';
+
+// Function to simulate typewriter effect
+function typeWriter(text, i) {
+    if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(() => {
+            typeWriter(text, i);
+        }, 100); // Adjust the typing speed (milliseconds)
+    }
+}
+
+// Call the typewriter function
+typeWriter(text, 0);
+
+</script>
+
+<!-- top-area End -->
+
+<!--about start -->
+<div class="home-features">
+    <div class="home-features-container featuresContainer">
+        <div class="home-features1">
+            <div class="home-container2">
+                <span class="home-features-sub-heading bodyLarge">
+                    <span>
+                        <span>
+                            <br>
+                            <span class="typewriter">Unlock the power of visual storytelling with 98Eight</span>
+                            <span></span>
+                        </span>
+                        <span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+	</div>
+</div>
+
+			
+			
+				<div class="ag-format-container">
+					<div class="ag-courses_box">
+					  <div class="ag-courses_item">
+						<a  class="ag-courses-item_link">
+						  <div class="ag-courses-item_bg"></div>
+				  
+						  <div class="ag-courses-item_title">
+							Photography Services
+						  </div>
+				  
+						  <div class="ag-courses-item_date-box">
+							Capture stunning moments with our professional photography services
+						  </div>
+						</a>
+					  </div>
+				  
+					  <div class="ag-courses_item">
+						<a  class="ag-courses-item_link">
+						  <div class="ag-courses-item_bg"></div>
+				  
+						  <div class="ag-courses-item_title">
+							Videography Services
+						  </div>
+				  
+						  <div class="ag-courses-item_date-box">
+							Bring your story to life with our expert videography services
+						  </div>
+						</a>
+					  </div>
+				  
+					  <div class="ag-courses_item">
+						<a class="ag-courses-item_link">
+						  <div class="ag-courses-item_bg"></div>
+				  
+						  <div class="ag-courses-item_title">
+							Graphic Design Services
+						  </div>
+				  
+						  <div class="ag-courses-item_date-box">
+							Enhance your brand with captivating graphic design solutions
+						  </div>
+						</a>
+					  </div>
+				  
+					  <div class="ag-courses_item">
+						<a  class="ag-courses-item_link">
+						  <div class="ag-courses-item_bg"></div>
+				  
+						  <div class="ag-courses-item_title">
+							Content Creation
+						  </div>
+				  
+						  <div class="ag-courses-item_date-box">
+							Explore our extensive collection of creative projects and see our expertise in action
+						  </div>
+						</a>
+					  </div>
+					</div>
+				  </div>
+				  
+			  
+						
+					
+
+						
+		<!--about end -->
+		
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>Partners</h2>
+			</div>
+			<p style="text-align: center;">  Birchwood hotel <span style="color: #98171c;">|</span>
+  
+				W&R Seta <span style="color: #98171c;">|</span>
+				Branding SA <span style="color: #98171c;">|</span>
+				TOC <span style="color: #98171c;">|</span>
+				Amcu <span style="color: #98171c;">|</span>
+				Setawu <span style="color: #98171c;">|</span>
+				 
+				CAD <span style="color: #98171c;">|</span>
+				Moja Love <span style="color: #98171c;">|</span>
+				Rising Sun foundation <span style="color: #98171c;">|</span>
+				Farming in Heels <span style="color: #98171c;">|</span>
+				Coole Networks</p>
+			<div class="marquee marquee--8">
+				<img class="marquee__item" src="data:image/png;base64,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" width="100" height="100" alt="">
+				<img class="marquee__item" src="802 final.png" width="100" height="100" alt="">
+				<img class="marquee__item" src="gold-1-1024x576.png
+				" width="100" height="100" alt="">
+				<img class="marquee__item" src="moja.png" width="100" height="100" alt="">
+				<img class="marquee__item" src="rising_sun2.png" width="100" height="100" alt="">
+				<img class="marquee__item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPkLvpVEzUtrKj96jvUbkuyol31EAH081_g&s" width="100" height="100" alt="">
+				<img class="marquee__item" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/AMCU_logo.svg/1200px-AMCU_logo.svg.png" width="100" height="100" alt="">
+				<img class="marquee__item" src="artistic.png" width="100" height="100" alt="">
+			  </div>
+
+		</section><!--/.education-->
+		<!--education end -->
+<style>
+	.marquee {
+  display: flex;
+  block-size: var(--marquee-item-height);
+  margin-block: var(--marquee-item-height);
+  position: relative;
+  overflow-x: hidden;
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
   );
 }
 
-.button-82-front {
-  display: block;
-  position: relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  color: white;
-  background:#98171c;
-  will-change: transform;
-  transform: translateY(-4px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+.marquee--8 {
+  --marquee-item-width: 100px;
+  --marquee-item-height: 100px;
+  --marquee-duration: 36s;
+  --marquee-items: 8;
 }
 
-@media (min-width: 768px) {
-  .button-82-front {
-    font-size: 1.25rem;
-    padding: 12px 42px;
+.marquee--3 {
+  --marquee-item-width: 150px;
+  --marquee-item-height: 150px;
+  --marquee-duration: 24s;
+  --marquee-items: 3;
+}
+
+.marquee--6 {
+  --marquee-item-width: 166px;
+  --marquee-item-height: 100px;
+  --marquee-duration: 32s;
+  --marquee-items: 6;
+}
+
+.marquee__item {
+  --marquee-item-offset: max(
+    calc(var(--marquee-item-width) * var(--marquee-items)),
+    calc(100% + var(--marquee-item-width))
+  );
+  --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
+  position: absolute;
+  inset-inline-start: var(--marquee-item-offset);
+  transform: translateX(-50%);
+  animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
+}
+
+.marquee__item:nth-child(4n) {
+  border-top-right-radius: 1rem;
+}
+
+.marquee__item:nth-child(4n + 1) {
+  border-bottom-right-radius: 1rem;
+}
+
+.marquee__item:nth-child(4n + 2) {
+  border-bottom-left-radius: 1rem;
+}
+
+.marquee__item:nth-child(4n + 3) {
+  border-top-left-radius: 1rem;
+}
+
+.marquee--8 .marquee__item:nth-of-type(1) {
+  --marquee-item-index: 1;
+}
+
+.marquee--8 .marquee__item:nth-of-type(2) {
+  --marquee-item-index: 2;
+}
+
+.marquee--8 .marquee__item:nth-of-type(3) {
+  --marquee-item-index: 3;
+}
+
+.marquee--8 .marquee__item:nth-of-type(4) {
+  --marquee-item-index: 4;
+}
+
+.marquee--8 .marquee__item:nth-of-type(5) {
+  --marquee-item-index: 5;
+}
+
+.marquee--8 .marquee__item:nth-of-type(6) {
+  --marquee-item-index: 6;
+}
+
+.marquee--8 .marquee__item:nth-of-type(7) {
+  --marquee-item-index: 7;
+}
+
+.marquee--8 .marquee__item:nth-of-type(8) {
+  --marquee-item-index: 8;
+}
+
+.marquee--3 .marquee__item:nth-of-type(1) {
+  --marquee-item-index: 1;
+}
+
+.marquee--3 .marquee__item:nth-of-type(2) {
+  --marquee-item-index: 2;
+}
+
+.marquee--3 .marquee__item:nth-of-type(3) {
+  --marquee-item-index: 3;
+}
+
+.marquee--6 .marquee__item:nth-of-type(1) {
+  --marquee-item-index: 1;
+}
+
+.marquee--6 .marquee__item:nth-of-type(2) {
+  --marquee-item-index: 2;
+}
+
+.marquee--6 .marquee__item:nth-of-type(3) {
+  --marquee-item-index: 3;
+}
+
+.marquee--6 .marquee__item:nth-of-type(4) {
+  --marquee-item-index: 4;
+}
+
+.marquee--6 .marquee__item:nth-of-type(5) {
+  --marquee-item-index: 5;
+}
+
+.marquee--6 .marquee__item:nth-of-type(6) {
+  --marquee-item-index: 6;
+}
+
+@keyframes go {
+  to {  
+    inset-inline-start: calc(var(--marquee-item-width) * -1);
   }
 }
-
-.button-82-pushable:hover {
-  filter: brightness(110%);
-  -webkit-filter: brightness(110%);
-}
-
-.button-82-pushable:hover .button-82-front {
-  transform: translateY(-6px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-82-pushable:active .button-82-front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
-}
-
-.button-82-pushable:hover .button-82-shadow {
-  transform: translateY(4px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-82-pushable:active .button-82-shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
-}
-
-.button-82-pushable:focus:not(:focus-visible) {
-  outline: none;
-}
-.form-btn {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.submit-btn {
-    background-color: #98171c; /* Updated background color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Button padding */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Font weight */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.submit-btn:hover {
-    background-color: #7c1317; /* Darker shade of the color on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
-
-.submit-btn:active {
-    background-color: #650f12; /* Even darker shade of the color when active */
-    transform: scale(1); /* Reset size when active */
-}
-
-.submit-btn:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px rgba(152, 23, 28, 0.25); /* Custom focus outline */
-}
-.form-control2 {
-    height: 50px; /* Increase the height to 50px, adjust as needed */
-    font-size: 16px; /* Optional: Increase the font size */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    border: 1px solid #ccc; /* Optional: Border styling */
-    transition: border-color 0.3s ease; /* Optional: Smooth transition for border color */
-}
-
-.form-control:focus {
-    border-color: #98171c; /* Optional: Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
 </style>
+		<!--skills start -->
+		<section id="skills" class="skills">
+			<div class="skill-content">
+			  <div class="section-heading text-center">
+				<h2 class="skill-title">Frequently asked questions</h2>
+			  </div>
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6">
+					<div class="single-skill-content">
+					  <div class="barWrapper">
+						<span class="progressText">How can I contact 98Eight?</span><br>
+						<p>You can contact 98Eight by calling our customer service hotline at <span class="progressText"><strong> +27 65 899 4400</strong></span> </p>
+						<div class="single-progress-txt">
+						  <div class="progress ">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="width: 100%;"></div>
+						  </div>
+						</div>
+					  </div><!-- /.barWrapper -->
+					  <div class="barWrapper">
+						<span class="progressText">Does 98Eight provide custom packages?</span>
+						<p>Yes, 98Eight provides custom packages tailored to meet your specific needs. Contact us to discuss your requirements and we will create a personalized package for you.</p>
+						<div class="single-progress-txt">
+						  <div class="progress ">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="width: 100%;"></div>
+						  </div>
+						</div>
+					  </div><!-- /.barWrapper -->
+					  <div class="barWrapper">
+						<span class="progressText">What is the turnaround time for project delivery?</span>
+						<p>The turnaround time for project delivery depends on the scope and complexity of the project. We strive to deliver high-quality work within a reasonable timeframe. Contact us for more information about project timelines.</p>
+						<div class="single-progress-txt">
+						  <div class="progress ">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="width: 100%;"></div>
+						  </div>
+						</div>
+					  </div><!-- /.barWrapper -->
+					  <div class="barWrapper">
+						<span class="progressText">What type of photography do you specialize in?</span>
+						<p>At 98Eight, we specialize in a diverse range of photography services, including event coverage, wedding photography, matric dance captures, corporate events, studio sessions, and more. Our experienced team is dedicated to creating stunning visuals that capture the essence of every moment.</p>
+						<div class="single-progress-txt">
+						  <div class="progress ">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="width: 100%;"></div>
+						  </div>
+						</div>
+					  </div><!-- /.barWrapper -->
+					</div>
+				  </div>
+				</div><!-- /.row -->
+			  </div><!-- /.container -->
+			</div><!-- /.skill-content -->
+		  </section><!-- /#skills -->
+		  
+		<!--skills end -->
 
+		<style>
+			/* CSS to make the titles white */
+			#skills .skill-title,
+			.progressText {
+			  color: white;
+			}
+		  </style>
+		  
 
+		<!--profiles start -->
+		
+		<!--profiles end -->
 
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>98eight</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
 
-          </div>
-         
-            <span class="home-hero-sub-heading bodyLarge">
-              98Eight: Your Premier Media Company
-            </span>
-<!-- For desktop view -->
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="https://scontent.fjnb5-1.fna.fbcdn.net/v/t39.30808-6/447253331_3674299416152318_6133907140794480858_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEVmJuPVg0QDVtlHBipVURDC09UVF0SUJwLT1RUXRJQnMRoyYUYRgfGjXDbSyVIK6uFXf17Rb88q-tr9EKvgE45&_nc_ohc=00WQJUrzaxsQ7kNvgEuT036&_nc_zt=23&_nc_ht=scontent.fjnb5-1.fna&oh=00_AYBDRfq6aXKNAAyMpFuhPyg1GpDTVZoixLQM_0-cbYXyUQ&oe=66838488" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Design by 98eight
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="https://scontent.fjnb5-1.fna.fbcdn.net/v/t39.30808-6/411975445_3559617620953832_6770071883128520708_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE61KhdQ-7EUivixp34xSmXn7S5z29TTsuftLnPb1NOyw6p8Mc5cnlMPxV0_PCNBU5TwR8dzaOEv_twQpAltMV3&_nc_ohc=15nMolc85icQ7kNvgEtH8aL&_nc_zt=23&_nc_ht=scontent.fjnb5-1.fna&oh=00_AYDLl1GLVVtTEpHvmIgcCmIOGqBuu5ZOOF91h5kJZKz3aQ&oe=6683A737" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Photography by 98eight
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
 
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="https://scontent.fjnb5-1.fna.fbcdn.net/v/t39.30808-6/410273462_3553421108240150_7559312697032249190_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG-lKBCpHveL-zEjuEpeT9BkLNdPPPTXK2Qs10889NcrdLJjUXFuchMATDPtIcWjc1l230_KiIH1UOQIKDRVfmZ&_nc_ohc=QhN2o7_DSkkQ7kNvgEMBouw&_nc_zt=23&_nc_ht=scontent.fjnb5-1.fna&oh=00_AYDLI2vMAPPQR6ZAxJixp5eNrcSKZ_2VOxdImyPY2-udsw&oe=66838BE2" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Photography by 98eight
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
 
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="https://scontent.fjnb5-1.fna.fbcdn.net/v/t39.30808-6/380331835_3507051456210449_5256251037764480690_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEBxcr-6CBOe-I9LcnR3IZLrNtfB5rJ2Nqs218HmsnY2u531R7SZkJaXY7-wsMOURf5kFPcJY-7kaFPO4msNkPb&_nc_ohc=pBdLXeo6n5wQ7kNvgFlnmfP&_nc_zt=23&_nc_ht=scontent.fjnb5-1.fna&oh=00_AYB0NByE0FqOixAHjqRCdp8z0n_bDE6-wH9_MxplvGBpTg&oe=6683899D" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Photography by 98eight
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="https://scontent.fjnb5-1.fna.fbcdn.net/v/t39.30808-6/367036841_3478893255692936_386009257452414050_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE5zEGttWdoqJ-jObtentfq9BjXxYPPFzL0GNfFg88XMsMoxwSLX8izsKk5rkzhvtjEjtuuqsohkadygJBpR-t3&_nc_ohc=FTgrF2ERE78Q7kNvgHDoIB7&_nc_zt=23&_nc_ht=scontent.fjnb5-1.fna&oh=00_AYCYKHr5psaBONRmO7gA8EOVU2V5dJiAOe2UU7E-eJYrRA&oe=6683B1D7" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Photography by 98eight
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+		<!--clients start -->
+		
+<!--/.clients-->
+		<!--clients end -->
+
+		<!--contact start -->
+		<footer class="footer" style="background-color: black; color: #bf0000;">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-4">
+						<p>
+							<a href="https://www.instagram.com/98eight_pictures/" target="_blank">
+								<i class="fa fa-instagram" aria-hidden="true" style="font-size: 24px; color: white; margin-right: 10px;"></i>
+							</a>
+							<a href="https://www.facebook.com/profile.php?id=100023081541841" target="_blank">
+								<i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 24px; color: white; margin-right: 10px;"></i>
+							</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						© 2024 98Eight, All Rights Reserved.
+					</div>
+					<div class="col-md-4">
+						<p><i class="fa fa-phone-square" aria-hidden="true" style="font-size: 24px; color: white; margin-right: 10px;"></i>Phone: +27 65 899 4400</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<style>
+			.footer {
+				padding: 20px 0;
+				text-align: center;
+			}
+		
+			.footer p {
+				margin-bottom: 5px;
+			}
+		
+			.footer i {
+				font-size: 24px;
+				margin-right: 10px;
+				color: white;
+			}
+		</style>
+			
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
         
-<br><br><br><br><br>
-<br><br><br><br><br><br>
-                </div>
-              </div>
-            </div>
-          </animate-on-reveal>
-        </div>
-        <div class="home-features">
-          <div class="home-features-container featuresContainer">
-            <div class="home-features1">
-              <div class="home-container2">
-                <span class="home-features-sub-heading bodyLarge">
-                   <span>
-                    <span>
-                      <br>
-                      <span
-                        class="typewriter">Unlock the power of visual storytelling with 98Eight
-                      </span>
-                      <span></span>
-                    </span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                  <span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                </span>
-              </div>
-              <a href="services/index.html">
-                <button class="button-82-pushable" role="button">
-                  <span class="button-82-shadow"></span>
-                  <span class="button-82-edge"></span>
-                  <span class="button-82-front text">
-                    Discover our services
-                  </span>
-                </button>
-              </a>
-              <style>
-                
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 
-.featuresCard {
-  display: flex;
-  align-items: center;
-  margin: 0px;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
 
-.featuresIcon {
- 
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
- 
-}
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
 
 
-.heading3 {
-  margin: 0;
-  font-size: 1.5em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.bodySmall {
-  font-size: 1em;
-  color: #555;
-}
-
-              </style>
-              <div class="home-container3">
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3  id="heading" class="feature-card-text heading3">
-                      <span>Photography Services</span>
-                      
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Capture stunning moments with our professional
-                        photography services
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3";>
-                      <span>Videography Services</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Bring your story to life with our expert videography
-                        services
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Graphic Design Services</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Enhance your brand with captivating graphic design
-                        solutions
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Content Creation</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Explore our extensive collection of creative projects
-                        and see our expertise in action
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
         
-        </div>
-       
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
         
-        
-<div class="home-banner" style="background-color: rgb(243, 235, 235); overflow: hidden;">
-  
-  <div class="bannerContainer home-banner1">
-    <div style="text-align: center;"><h3>Partners</h3></div>
-    <span class="home-banner-sub-heading bodySmall">
-      <div class="logo-container" style="width: 100%; white-space: nowrap;">
-        
-        <img src="/logos/artistic.webp" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
-        <img src="/logos/802.webp" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
-        <img src="/logos/teen.webp" alt="Artistic Logo" class="logo" style="display: inline-block; width: 400px; height: 200px;">
-        <img src="/logos/wine.webp" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
-        <img src="/logos/law.webp" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
-        <!-- Add more logo images here if needed -->
-    </div>
-    
-    </span>
-    <p style="text-align: center;">  Birchwood hotel <span style="color: #98171c;">|</span>
-  
-      W&R Seta <span style="color: #98171c;">|</span>
-      Branding SA <span style="color: #98171c;">|</span>
-      TOC <span style="color: #98171c;">|</span>
-      Amcu <span style="color: #98171c;">|</span>
-      Setawu <span style="color: #98171c;">|</span>
-       
-      CAD <span style="color: #98171c;">|</span>
-      Moja Love <span style="color: #98171c;">|</span>
-      Rising Sun foundation <span style="color: #98171c;">|</span>
-      Farming in Heels <span style="color: #98171c;">|</span>
-      Coole Networks</p>
-  
-  </div>
-</div>
-
-      
-                  </span>
-          
-        </span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="home-faq">
-          <div class="faqContainer">
-            <div class="home-faq1">
-              <div class="home-container4">
-                <span class="overline">
-                  <span>FAQ</span>
-                  <br />
-                </span>
-                <h2 class="home-text45 heading2">Common questions</h2>
-                <span class="home-text46 bodyLarge">
-                  <span>
-                    Here are some of the most common questions that we get.
-                  </span>
-                  <br />
-                </span>
-              </div>
-              <div class="home-container5">
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                   
-                  </span>
-                  <span class="bodySmall">
-                    
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3"style="color: #98171c ;">
-                    <span>How can I contact 98Eight?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      You can contact 98Eight by calling our customer service hotline at <strong>
-                      +27 65 899 4400</strong>
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3"style="color: #98171c;">
-                    <span>Does 98Eight provide custom packages?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, 98Eight provides custom packages tailored to meet
-                      your specific needs. Contact us to discuss your
-                      requirements and we will create a personalized package for
-                      you.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3"style="color: #98171c;">
-                    <span>
-                      What is the turnaround time for project delivery?
-                    </span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      The turnaround time for project delivery depends on the
-                      scope and complexity of the project. We strive to deliver
-                      high-quality work within a reasonable timeframe. Contact
-                      us for more information about project timelines.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3"style="color: #98171c;">
-                    <span>What type of photography do you specialize in?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      
-                      At 98Eight, we specialize in a diverse range of photography services, including event coverage, wedding photography, matric dance captures, corporate events, studio sessions, and more. Our experienced team is dedicated to creating stunning visuals that capture the essence of every moment.
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer-16371">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-9 text-center">
-                <div class="footer-site-logo mb-4">
-                  <a href="#">98Eight</a>
-                </div>
-                <ul class="list-unstyled nav-links mb-5">
-                  <li><a href="#">Home</a></li>
-                 
-                  <li><a href="services/index.html">Services</a></li>
-                  
-                  <li><a href="portfolio/index.html">Portfolio</a></li>
-                  <li><a href="about/index.html">About</a></li>
-                
-                  <li><a href="contact/index.html">Contact</a></li>
-                </ul>
-                <style>
-                  .navbar-nav .nav-link:hover {
-                    color: #98171c !important;
-                }
-                
-                  .list-inline-item a {
-                    color: #98171c;
-                    transition: color 0.3s;
-                }
-                
-                .list-inline-item a:hover {
-                    color: darken(#98171c, 10%);
-                }
-                
-                </style>
-                <div class="social mb-4">
-                  <h3>Stay in touch</h3>
-                  <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100023081541841"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                    <li class="list-inline-item"><a href="mailto:98Eightservices@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
-                    <li class="list-inline-item"><a href="tel:0658994400"><i class="fab fa-whatsapp-square fa-2x"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/98eight_pictures/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
-                  </ul>
-                </div>
-                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
-   
-   
-   
-   <style>
-      
-    .content {
-      height: 70vh; }
-      .footer-16371 {
-      padding: 7rem 0;
-      font-family: "Poppins", sans-serif; 
-      background-color: #232323;
-}
-    .footer-16371 {
-      padding: 7rem 0;
-      font-family: "Poppins", sans-serif; }
-      .footer-16371 .footer-site-logo {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 900; }
-        .footer-16371 .footer-site-logo a {
-          color: #98171c; }
-      .footer-16371 .nav-links {
-        padding: 0;
-        margin: 0; }
-        .footer-16371 .nav-links li {
-          display: inline-block; }
-          .footer-16371 .nav-links li a {
-            padding: 10px;
-            color: #969494; }
-            .footer-16371 .nav-links li a:hover {
-              color: #98171c; }
-      .footer-16371 .social h3 {
-        font-weight: bold;
-        font-size: 18px;
-        color: #9b9898; }
-      .footer-16371 .social ul li {
-        display: inline-block; }
-        .footer-16371 .social ul li a {
-          display: inline-block;
-          padding: 10px; }
-        .footer-16371 .social ul li.in a {
-          color: #df588a; }
-        .footer-16371 .social ul li.tw a {
-          color: #15b8ff; }
-        .footer-16371 .social ul li.fb a {
-          color: #3742d0; }
-        .footer-16371 .social ul li.dr a {
-          color: #fa38c1; }
-        .footer-16371 .social ul li.pin a {
-          color: #dd4d5a; }
-      .footer-16371 .copyright {
-        color: #999999; }
-    
-    </style>
-                <div class="copyright">
-                  <p class="mb-0"><small>&copy; 98Eight. All Rights Reserved.</small></p>
-                </div>
-    
-    
-              </div>
-            </div>
-          </div>
-        </footer>
-    
-    
-        
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    <script>
-      $('.form-control').each(function () {
-          floatedLabel($(this));
-      });
-  
-      $('.form-control').on('input', function () {
-          floatedLabel($(this));
-      });
-  
-      function floatedLabel(input) {
-          var $field = input.closest('.form-group');
-          if (input.val()) {
-              $field.addClass('input-not-empty');
-          } else {
-              $field.removeClass('input-not-empty');
-          }
-      }
-  </script>
-    <script>
-      // Existing typewriter function for the initial text
-      let i = 0;
-      const txt = "Let's make memories ";
-      const speed = 50;
-      
-      function typeWriter() {
-        if (i < txt.length) {
-          document.getElementById("typewriter-text").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-      
-      // IntersectionObserver to trigger typewriter effect
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            typeWriter();
-            observer.unobserve(entry.target);
-          }
-        });
-      });
-      
-      // Observe elements with class 'typewriter-trigger'
-      const typewriterElements = document.querySelectorAll('.typewriter-trigger');
-      typewriterElements.forEach(element => {
-        observer.observe(element);
-      });
-    </script>
-    
-    <script>
-      // Set heading opacity on DOMContentLoaded
-      document.addEventListener("DOMContentLoaded", function() {
-        var heading = document.getElementById("heading");
-        heading.style.opacity = 1;
-      });
-    
-      // Load custom scripts for the navbar
-      window.addEventListener('DOMContentLoaded', function() {
-        var script = document.createElement('script');
-        script.src = "https://unpkg.com/@teleporthq/teleport-custom-scripts";
-        script.setAttribute("data-section-id", "navbar");
-        document.body.appendChild(script);
-      });
-    
-      // Load animate-on-reveal library
-      window.addEventListener('DOMContentLoaded', function() {
-        var script = document.createElement('script');
-        script.src = "https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js";
-        script.defer = true;
-        document.body.appendChild(script);
-      });
-    
-      // Fade out loading logo and fade in content after 2 seconds
-      $(document).ready(function(){
-        setTimeout(function(){
-            $('.loading-logo').fadeOut(); // Fade out the loading logo
-            $('.content').fadeIn(); // Fade in the main content
-        }, 2000); // Adjust the time in milliseconds (2 seconds in this case)
-      });
-    
-      // Typewriter effect for elements with class "typewriter"
-      $(document).ready(function(){
-        $('.typewriter').each(function() {
-          var $el = $(this);
-          var text = $el.html();
-          $el.html('');
-          var index = 0;
-          var typewriter = setInterval(function() {
-            $el.append(text[index++]);
-            if(index === text.length) {
-              clearInterval(typewriter);
-            }
-          }, 50); // Adjust typing speed here (in milliseconds)
-        });
-      });
-    
-      // Scale heading based on scroll position
-      var lastScrollTop = 0;
-      var ticking = false;
-      var fontSize = 36; // Initial font size
-      
-      function scaleHeading() {
-        var scrollY = window.scrollY;
-        var heading = document.getElementById('heading');
-        var scrollDirection = scrollY > lastScrollTop ? 'down' : 'up';
-        var scrollDelta = Math.abs(scrollY - lastScrollTop);
-        
-        // Adjust font size based on scroll direction and scroll delta
-        if (scrollDirection === 'down' && fontSize < 50) {
-          fontSize += scrollDelta * 0.05; // Adjust this multiplier for desired scaling speed
-        } else if (scrollDirection === 'up' && fontSize > 36) {
-          fontSize -= scrollDelta * 0.05;
-        }
-      
-        // Limit font size within a range
-        fontSize = Math.min(Math.max(fontSize, 36), 50); // Adjust min and max font size as needed
-        
-        // Apply new font size to the heading
-        heading.style.fontSize = fontSize + 'px';
-        
-        // Toggle the fixed position class based on font size
-        if (fontSize >= 50) {
-          heading.classList.add('fixed');
-        } else {
-          heading.classList.remove('fixed');
-        }
-        
-        lastScrollTop = scrollY;
-        ticking = false;
-      }
-      
-      function requestTick() {
-        if (!ticking) {
-          requestAnimationFrame(scaleHeading);
-          ticking = true;
-        }
-      }
-      
-      window.addEventListener('scroll', function() {
-        requestTick();
-      });
-    </script>
-     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const dropdown = document.querySelector('.dropdown');
-        const toggle = document.querySelector('.dropdown-toggle');
-  
-        toggle.addEventListener('click', function(event) {
-          event.preventDefault();
-          dropdown.classList.toggle('open');
-        });
-      });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
-    
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-    <script src="js/main.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
+    </body>
+	
 </html>
