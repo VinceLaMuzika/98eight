@@ -643,9 +643,7 @@ dt {
 dd {
 	margin: 0 1.5em 1.5em;
 }
-.logo-header {
-	height:10% !important;
-}
+
 img {
 	height: auto;
 	/* Make sure images are scaled correctly. */
